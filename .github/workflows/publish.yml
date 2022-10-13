@@ -19,7 +19,7 @@ jobs:
           images: |
             ${{ secrets.DOCKER_HUB_USERNAME }}/peterkneale.microservices.chassis
           tags: |
-            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}.{{minor}}.{{patch}}
             type=sha
             
       - name: Login to Docker Hub
